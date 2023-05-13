@@ -7,7 +7,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width initial-scale = 1">
         <meta name="description" content="The plant site">
-        <meta name="keywords" content="plants, rs-school, ">
+        <meta name="keywords" content="plants, rs-school">
+        <link href="styles/style.css" rel="stylesheet">
     </head>
     <body>
         <div id="container">
@@ -15,13 +16,16 @@
                 <div id="menu-container">
                     <div id="menu-img-container">
                         <img src="images/logo_vector.png" alt="menu-img">
+                        <div>Plants</div>
                     </div>
-                    <div>Plants</div>
-                    <div><a href="#">Home</a></div>
-                    <div><a href="#">About us</a></div>
-                    <div><a href="#">Service</a></div>
-                    <div><a href="#">Price</a></div>
-                    <div><a href="#">Contacts</a></div>
+                    
+                    <div id="navigator-container"> 
+                        <a href="#" class="navigator-link">Home</a>
+                        <a href="#" class="navigator-link">About us</a>
+                        <a href="#" class="navigator-link">Service</a>
+                        <a href="#" class="navigator-link">Price</a>
+                        <a href="#" class="navigator-link">Contacts</a>
+                    </div>
                 </div>
             </header>
             <main>
@@ -116,7 +120,40 @@
                 <section id="price">
                     <div id="left-container">
                         <h1>Prices</h1>
-                        <div></div>
+                        <div id="price-select-container">
+                            <div id="basics-container">
+                                <form id="basics-form">
+                                    <label>Basics</label>
+                                    <select id="basics-select" name="basics">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div id="standard-container">
+                                <form id="standard-form">
+                                    <label>Standard</label>
+                                    <select id="standard-select" name="standard">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div id="procare-container">
+                                <form id="procare-form">
+                                    <label>Pro care</label>
+                                    <select id="procare-select" name="procare">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="right-container">
@@ -130,7 +167,16 @@
                     <div id="contacts-container">
                         <h1>Contact us</h1>
                         <img src="images/contact_woman 1.png" alt="the image of woman with plant and shovel">
-                        <div></div>
+                        <div id="city-select-container">
+                            <form id="city-form">
+                                <label>City</label>
+                                <select id="city-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </form>
+                        </div>
                     </div>
                 </section>
             </main>
